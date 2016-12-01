@@ -21,6 +21,7 @@ static int detail = FALSE;
 
 void help ()
 {
+  fprintf (stderr, "A simple demonstration of an OpenCL based kernel doing a naeve rgb2i420 conversion\n");
   fprintf (stderr, "Usage:\n");
   fprintf (stderr, "-g: Use the discreet GPU\n");
   fprintf (stderr, "-d: Detailed messages\n");
