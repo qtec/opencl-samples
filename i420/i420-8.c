@@ -138,7 +138,7 @@ int main(int argc, char *argv[])
   cl_ret_on_err("clClreateContext", err, -1);
 
   /* Create command queue */
-  gpu_queue = clCreateCommandQueueWithProperties(context, device, NULL, &err);
+  gpu_queue = clCreateCommandQueue(context, device, 0, &err);
   cl_ret_on_err("clClreateCommandQueue", err, -1);
 
   fprintf(stdout, "Creating program\n");
